@@ -69,6 +69,36 @@ body {
 .main-window-result:hover {
     background-image: linear-gradient(to right, #B33700,#DD7201);
 }
-@media only screen and (min-width: 768px) {
-    
+@media only screen and (max-width: 767px) {
+    .main-navbar {
+        width: 100vw;
+    }
+    .main-window__image img {
+        display: none;
+    }
+    .main-navbar__logo img {
+        margin-left: 0.2vw;
+        width: 25vw;
+    }
+    .main-navbar__items {
+        font-size: 15px;
+        margin-right: 0.2vw;
+    }
+    .main-navbar__item {
+        display: block;
+    }
+    .main-window {
+        justify-content: flex-start;
+    } 
+    .main-window__quotes {
+        font-size: 2rem;
+    }
+    .main-window-results {
+        left: 0;
+        width: 100vw;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 1vw;
+    }
+
 }
